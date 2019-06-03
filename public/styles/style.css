@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 380px;
+    background-image: url("/img/pink.jpg");
+    width: auto;
+}
+
+.table-rows {
+  display: inline-block;
+  width: 400px;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+
+.msg-title {
+  height: 50px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.msg-body {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  vertical-align: text-top;
+  text-align: center;
+}
+
+.button{
+  height: 50px;
+  width: 100px;
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.message{
+  width: 43%;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid black;
+  margin: 5px;
+  box-shadow: 8px 8px 7px grey;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+a {
+  font-size: 20px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .msg-title{
+    width: 70%;
+  }
+  .msg-body{
+    width: 300px;
+  }
+  .message {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+  }
+  ul {
+    padding: 0;
+  }
+}

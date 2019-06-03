@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Exchange Board</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/addPost">Board</a>
+    </div>
+    <h1>Postings</h1>
+    <ul class="container">
+    <%newPost.forEach(post => {%>
+        <div class="message">
+            <h3 class="title"><%=post.title%></h3>
+            <p class="body"><%=post.body%></p>
+        </div>
+    <%})%>
+    </ul>
+        
+    <input class="button" onClick="window.location.href='/'" type="submit" value="Back">
+</body>
+</html>
